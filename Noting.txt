@@ -18,7 +18,7 @@ Stage Numbers:
 040201		Skyworld Last (Broken item data currently, but doesn't crash)
 050001		Sea of Clouds, Halberd
 060001		The Jungle
-070001		The Plain | Mostly possible with 2+2, end of wall pushers tricky. edited col to fix
+070001		The Plain | Mostly possible with 2+2, end of wall pushers tricky. edited col to fix. prolly should edit more
 080001		The Lake, Rayquaza Fight
 090001		The Zoo
 100001		The Battlefield Fortress

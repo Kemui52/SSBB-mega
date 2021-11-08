@@ -1,0 +1,518 @@
+SSE Key:
+Easy		Untested
+Normal		Big		(1+2)
+Hard		Mega		(2+2)
+Very Hard	Massive		(2+3)
+Intense		Interference
+
+Stage Specifics:
+The Plain		
+The Wilds (Dark)	tight spaces for a 4
+SSBombFactory(Platform)	Starts at mostly full FPS, but has ceiling
+OutsideAncientRuins	First door has 48fps.
+
+Stage Numbers:
+010001		first stadium?
+040001		Skyworld Start
+040101		Skyworld 1st combat?
+040201		Skyworld Last (Broken item data currently, but doesn't crash)
+050001		Sea of Clouds, Halberd
+060001		The Jungle
+070001		The Plain | Mostly possible with 2+2, end of wall pushers tricky. edited col to fix
+080001		The Lake, Rayquaza Fight
+090001		The Zoo
+100001		The Battlefield Fortress
+
+Shake:
+0 walk, landlight
+1 run, land, stopceilwall
+2 some taunts
+
+Sounds:
+004B	flamehit soft
+004C	flamehit medium
+004D	flamehit big
+004E	flamehit huge
+004F	someboom soft		landlight, stopceilwall
+0050	someboom medium		landheavy, landairs
+0051	someboom big
+0052	someboom huge
+0053	ledgegrab
+005E	stopceil, medium	walkmedfast
+005F	stopceil, soft		walkslow
+0065	eat 1
+0066	eat 2
+0070	big swoosh delayed
+0071	big swoosh
+
+Attributes:
+Walk Max Velocity:	match whatever's lowest
+Stopping Velocity:	0.2	def	SSE default for tunnel sliding
+Dash & StopTurn:	1.0	1.0	
+Jump Startup Time:	match whatever's highest
+Air Jump Multiplier:	match whatever's highest
+Terminal Velocity:	match whatever's lowest
+Weight:			400	400
+Item Throw Strength:	x2	x2
+Walljump V Velocity:	~6	~6
+Magnifying Shrink:	half	half
+
+Progress:	--hanenbow still doinf flat. nice job checking
+Bowser		armour, shake, taunts, attacks, stomp, attribs, speed, specials| mega, vore
+Bowser Giga	armour, taunts --not done shake on taunts, did a few bits of speed
+Charizard	armour, shake, taunts, attacks, stomp, attribs, speed, specials
+Falco		armour, shake, taunts, attacks, stomp, attribs, speed, specials| mega, vore
+Fox		armour, shake, taunts, attacks, stomp, attribs, speed, specials
+Ganon		--no emerald
+Lucario		armour, shake, taunts, attacks, stomp, attribs, speed, specials| mega, vore
+Ridley		armour, --converting pal sounds, left off at start of attacks
+Peach		armour, shake, taunts --try victory taunts, magnifying
+Samus Zero	armour, shake, taunts, attacks, stomp, attribs, speed, specials
+Wolf		armour, shake, taunts, attribs
+Yoshi		armour, shake, taunts
+
+Scripts:
+Stick Direction Pressed is bow-tie shape, no params
+LA-Basic[54] contains costume ID as Scalar
+
+Additionals:
+brsar fighter bank limit: CAA1D good, CAAE4 bad ??? (falco)
+echo values were: 0.12 _ 0.09
+
+PSA Edits:
+armour		super armour to each accessible sub-action
+shake		screenshake for any footsteps and landings
+taunts		lining up taunts with size and adding more (win poses)
+attacks		making A attacks and throws easier to hit things, sometimes changing anim
+stomp		stomp sounds to accompany footstep screenshakes
+attribs		setting attributes as defined above
+speed		slowing framespeed of wait, walk, and other specific things
+specials	buffing B moves in attack and recovery
+mega		adding offensive collision to regular movement
+vore		changing item pickups to remove item and play eating sound, anim changes
+		   lightgets and heavyget, as well as lightthrowdrop
+		   cracker launcher and hammer (141, 143, 144, 146, 173) should add destroy held item
+
+AI Types:
+0	 Normal
+1	 Stop/Idle
+2	 Walk
+3	 Jump
+4	 Defend/Escape
+5	 Freak?
+6	 Aggressive?
+7	 More Aggressive?
+8	 Six?
+9	 Aggressive Alt?
+10	 Freak?
+11	 Something attacky
+14	 Something attacky
+15	 Used by Sheik in 22? And foes in 31? Freakish?
+21	 Non-Violently Approachive (less jumpy than Escape)
+22	 Tiny Diddies?
+23	 Dodgy Offensive?
+24	 Crouch, avoid projectiles
+
+Events Solo:
+1	Normal
+2used	Infinite use of FS (foes fly farther when a Landmaster is present (Wolf untested)
+3	Fails upon entering Halberd's boarded state
+4used	Skyworld platforms don't respawn, only spawns containers and food
+5	Normal, but KO'd PKMN can't be switched to
+6	Succeeds at flagpole
+7	KO an amount
+8used	Normal
+9	Regular stock match, but spawns 4th at 3rd stage
+10	Foes spawn in from top (8)
+11	Defeat in specific order
+12	Both foes need to be in eggs (only?)
+13	Foes must be defeated by Dragoon strike
+14	Six Pikmin must bloom
+15	Normal?
+16used	Succeeds at any P1 transform
+17	Ends at top (or stage loop?)
+18	Normal, P2 black sub-colour
+19	Normal?
+20	Foes spawn in from top (8)
+21	Normal?
+22	Gimmick is that Donkey is the attacker
+23	Succeeds when inside capsule (fixed stage seed?)
+24	Requires Blue Falcon to KO (only?)
+25	Normal
+26used	Normal, always KK Slider show
+27	Normal
+28	Normal, leaf recovery slowed
+29	Foes spawn in from top (4, has space for 8?)
+30	Normal
+31	Unique AI that crouches until third stage swop
+32	Stage goes black in intervals
+33	Normal?
+34	Foes spawn in from top (8)
+35	Normal, but has sub-colours
+36	Normal (maybe fixed stage variant?)
+37	Can only KO at sky, stage does same loop (AI seem defensively offensive)
+38	Normal
+39	Foes spawn in from top (8)
+40	Normal
+41	Normal, most likely
+
+Events Co-op:
+1	Normal
+2	Normal, but KO'd PKMN can't be switched to
+3	Normal (does the stage change?)
+4	Lightning lowers defense ratio, also only lightning (has loads of slots)
+5	Fails at stage loop?
+6	Normal, but foes have no portraits (invisible effect?)
+7	Normal
+8	Normal
+9	Mr. Saturns only?
+10	Normal
+11	Fails at any stage break
+12	Normal
+13	Normal
+14	Normal
+15	Normal, most likely
+16used	Sizes change every Castle Siege swop
+17	Normal
+18	Normal (same stage variant?)
+19used	Infinite Andross
+20	Foes spawn in from top (several invulns)
+21	Foes spawn in from top (untested)
+
+Stages:
+Battlefield
+Final Destination	WuuHuu Island, Widened
+Delfino Plaza
+Luigi's Mansion
+Mushroomy Kingdom 1-1
+Mushroomy Kingdom 1-2
+Mario Circuit		Widened
+Rumble Falls
+Bridge of Eldin
+Pirate Ship
+Norfair
+Frigate Orpheon		Pyrosphere
+Yoshi's Island
+Halberd
+Lylat Cruise
+Pokémon Stadium 2
+Spear Pillar
+Port Town Aero Dive
+Castle Siege
+WarioWare, Inc.
+Distant Planet
+Smashville
+New Pork City
+Summit
+Skyworld
+75m			Duck Hunt
+Mario Bros.		Sirena Beach
+Flat Zone 2
+PictoChat		Planeptune City
+Hanenbow		Abandoned Highway
+Shadow Moses Island
+Green Hill Zone
+Temple			Ikana Valley
+Yoshi's Island Melee	Tortimer Island
+Jungle Japes		Flat and Bridged
+Onett			Widened, Straightened
+Corneria
+Rainbow Ride		Peach's Castle Omega
+Green Greens		Cap Kingdom
+Big Blue		Metal Cavern
+Brinstar		Omega, but platforms
+Pokémon Stadium 1
+
+Costumes:
+Bowser					Giga
+00			Original	
+01	Groudon		Red
+03	Blastoise	Blue
+04	King K. Rool	Black
+05	Dry Bowser	White-Gold
+06	Nidoking	Brown
+Fake	Dark Bowser	Subspace
+
+Captain Falcon
+00			Original
+01us			Blood Hawk (must have if USA, if japan then jap)
+02			Green
+03			Blue
+04			Black
+05	Waluigi		Pink
+
+Dedede
+00-Original
+02-Green
+03-White
+04-Grayscale
+05-Purple
+06-Pink
+
+Diddy Kong
+00			Original
+02			Green
+03			Blue
+04			Pink
+05			Yellow/White
+06			Purple
+
+Donkey Kong
+00			Original
+01			Red
+02	Ifrit		Green
+03	Galleom		Blue
+04	TwiliBeast	Black
+05			White
+
+Falco
+00	No Headgear	Original
+01	Assault		Red
+02	Mega Scizor	Green
+03	Kabutops	Blue
+04			Black
+05	Love Bird	Yellow
+
+Fox
+00	No Headgear	Original
+01	Sharpclaw	Red
+02	Slippy		Green
+03			Blue
+04			Black
+05	Tails		White
+
+Game And Watch
+00- (One FitGameWatch00.pac/pcs file replaces all 6 costumes)
+
+Ganondorf
+00	Pig Purple	Original
+01	Pig Red		Red
+02	Pig LessArmour	Green
+03	Ex-Veemon	Blue
+04	Pig White	Grandpa Ganon
+05	Pig Twilight	Brown
+0C			Emerald
+
+Ice Climbers
+00-Original
+01-Red
+02-Green
+03-Blue
+04-Dark
+05-Light
+
+Ike
+00	Goat Demon	Original
+01-Red
+02-Green
+03-Blue
+04-Another Kind Of Green
+05-Yellow
+
+Jigglypuff
+00-Normal
+01-Flower (Red)
+02-Sleep Hat (Green)
+03-Japan Hat (Blue)
+04-Trainer Cap (White)
+
+Kirby
+00			Original
+01			Red
+02			Green
+03			Blue
+04			Yellow
+05			White
+
+Link
+00-Original
+01-Red
+03-Blue
+04-Dark
+05-White/Light Blue
+06-Yellow
+
+Lucario
+00			Original
+01	Mewtwo		Red
+02	Robo		Green
+04	Mega Lucario	Light Blue
+05	Mega Feminine	White
+-
+ENG
+FRA
+GER	Mewtwo
+ITA
+ESP
+
+Lucas
+00-Original
+01-Red
+02-Green
+03-Blue
+04-Claus/Ginger Hair
+05-Pink/Purple
+
+Luigi
+00			Original
+01			Red/Pink
+02			UNUSED-Blue
+03			Blue
+04	Overbright Bandicoot	Fire Luigi/White
+05			Orange
+06			Waluigi/Purple
+
+Mario
+00			Original
+02			Green
+03			Blue
+04			Wario/Yellow
+05			Black
+06			Fire Mario/White
+
+Marth
+00-Original
+01-Red
+02-Green
+03-Blue
+04-Black
+05-White
+
+Meta-Knight
+00-Original
+01-Red
+02-Green
+03-Dark Meta-Knight/Dark Blue
+04-White
+05-Pink
+
+Ness
+00-Original
+02-Green
+03-Blue
+04-Bumble-Bee
+05-Fuel/White
+06-Mr.Saturn/Black
+
+Peach
+00			Original
+01	Shadow Queen	Red
+02	Felicia		Green
+03	Krystal		Blue
+04	Cremia		White
+05	Kalypso		Daisy/Yellow
+
+Pikachu
+00			Original
+01			Cap (Red)
+02			Bandana (Green)
+03			Googles (Blue)
+
+Pikmin & Olimar
+00-Original
+01-Red
+02-Green
+03-Blue
+04-White and Black
+05-Dirty Helmet (Yellow and Black)
+
+Pit
+00	Ridley Original	Original
+01	Red		Red
+02	Minty Green	Green
+03	Ice Blue	Blue
+04	Black Original	Gold
+05	White/Red	Black
+0C	Pale Black	Emerald
+
+Pokemon Trainer
+00	CharizardWiiU	Squirtle	Ivysaur		Original
+01	Reshiram			Venusaur	Red
+02	Noivern						Green
+03	Mega X						Blue
+04	Dry Bones					Light
+
+ROB
+00			Original
+02			Green
+03			Blue
+04			Pink/Purple
+05			Yellow
+06			NES
+
+Samus
+00-Original
+01-Pink
+02-Green
+03-Fusion/Blue
+04-Gravity Suit/Purple
+05-Dark Suit/Black
+
+Snake
+00-Original
+01-Red/Black
+02-Green
+03-Blue
+04-White
+05-Wild Feline camo
+
+Sonic
+00			Original
+01			Red
+02			Green
+04			Gold
+05			Black
+
+Toon Link
+00-Original
+01-Red
+03-Blue
+04-Purple
+05-NES Link
+06-Dark
+
+Wario
+00-Original (WarioWare)
+01-Red (WarioWare)
+02-Green (WarioWare)
+03-Blue (WarioWare)
+04-Black & Red (WarioWare)
+05-Orange & Blue (WarioWare)
+06			Original (Overall)
+07			Red (Overall)
+08			Green (Overall)
+09			Blue (Overall)
+0A			WarioLand 2 color (Overall)
+0B			WarioLand 3 color (Overall)
+
+Wolf
+00			Original
+01	Weregarurumon	Red
+02	General Scales	Green
+03	Pirate Wolf	Blue
+04	Stalchild	Black
+05	Yugo		Red & White
+
+Yoshi
+00			Original
+01			Red
+03			Blue
+04			Yellow
+05			Pink
+06			Light Blue
+
+Zelda (corresponds with Sheik)
+00			Original
+01			Red
+02			Green
+03	Midna		Blue
+04			Black
+05			OoT
+
+Zero Suit Samus
+00	Orange		Original
+01			Pink
+02	SomeoneTopless	Green
+03	Bikini		Blue
+04			Gravity Suit/Purple
+05			Black

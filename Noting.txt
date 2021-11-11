@@ -1,17 +1,17 @@
-SSE Key:
+SSE Key: {save file stuff}
 Easy		Untested
 Normal		Big		(1+2)
 Hard		Mega		(2+2)
 Very Hard	Massive		(2+3)
 Intense		Interference
 
-Stage Specifics:
+Stage Specifics: {outdated notes}
 The Plain		
 The Wilds (Dark)	tight spaces for a 4
 SSBombFactory(Platform)	Starts at mostly full FPS, but has ceiling
 OutsideAncientRuins	First door has 48fps.
 
-Stage Numbers:
+Stage Numbers: {modern notes}
 010001		first stadium?
 040001		Skyworld Start
 040101		Skyworld 1st combat?
@@ -23,12 +23,12 @@ Stage Numbers:
 090001		The Zoo
 100001		The Battlefield Fortress
 
-Shake:
+Shake: {mod construction)
 0 walk, landlight
 1 run, land, stopceilwall
 2 some taunts
 
-Sounds:
+Sounds: {mod construction}
 004B	flamehit soft
 004C	flamehit medium
 004D	flamehit big
@@ -45,7 +45,7 @@ Sounds:
 0070	big swoosh delayed
 0071	big swoosh
 
-Attributes:
+Attributes: {mod construction}
 Walk Max Velocity:	match whatever's lowest
 Stopping Velocity:	0.2	def	SSE default for tunnel sliding
 Dash & StopTurn:	1.0	1.0	
@@ -71,15 +71,15 @@ Samus Zero	armour, shake, taunts, attacks, stomp, attribs, speed, specials
 Wolf		armour, shake, taunts, attribs
 Yoshi		armour, shake, taunts
 
-Scripts:
+Scripts: {PSA notes}
 Stick Direction Pressed is bow-tie shape, no params
 LA-Basic[54] contains costume ID as Scalar
 
-Additionals:
+Additionals: {sound notes}
 brsar fighter bank limit: CAA1D good, CAAE4 bad ??? (falco)
 echo values were: 0.12 _ 0.09
 
-PSA Edits:
+PSA Edits: {mod definition}
 armour		super armour to each accessible sub-action
 shake		screenshake for any footsteps and landings
 taunts		lining up taunts with size and adding more (win poses)
@@ -93,7 +93,7 @@ vore		changing item pickups to remove item and play eating sound, anim changes
 		   lightgets and heavyget, as well as lightthrowdrop
 		   cracker launcher and hammer (141, 143, 144, 146, 173) should add destroy held item
 
-AI Types:
+AI Types: {documentation}
 0	 Normal
 1	 Stop/Idle
 2	 Walk
@@ -113,7 +113,7 @@ AI Types:
 23	 Dodgy Offensive?
 24	 Crouch, avoid projectiles
 
-Events Solo:
+Events Solo: {documentation}
 1	Normal
 2used	Infinite use of FS (foes fly farther when a Landmaster is present (Wolf untested)
 3	Fails upon entering Halberd's boarded state
@@ -156,7 +156,7 @@ Events Solo:
 40	Normal
 41	Normal, most likely
 
-Events Co-op:
+Events Co-op: {documentation}
 1	Normal
 2	Normal, but KO'd PKMN can't be switched to
 3	Normal (does the stage change?)
@@ -179,7 +179,7 @@ Events Co-op:
 20	Foes spawn in from top (several invulns)
 21	Foes spawn in from top (untested)
 
-Stages:
+Stages: {personal mod list}
 Battlefield
 Final Destination	WuuHuu Island, Widened
 Delfino Plaza
@@ -223,7 +223,7 @@ Big Blue		Metal Cavern
 Brinstar		Omega, but platforms
 Pokémon Stadium 1
 
-Costumes:
+Costumes: {personal mod list}
 Bowser					Giga
 00			Original	
 01	Groudon		Red
@@ -302,7 +302,7 @@ Ice Climbers
 05-Light
 
 Ike
-00	Goat Demon	Original
+00	Goat Demon	Original	{i don't think i'm into it}
 01-Red
 02-Green
 03-Blue
@@ -491,7 +491,7 @@ Wolf
 02	General Scales	Green
 03	Pirate Wolf	Blue
 04	Stalchild	Black
-05	Yugo		Red & White
+05	Yugo		Red & White	{lost file}
 
 Yoshi
 00			Original
@@ -512,7 +512,7 @@ Zelda (corresponds with Sheik)
 Zero Suit Samus
 00	Orange		Original
 01			Pink
-02	SomeoneTopless	Green
+02	SomeoneTopless	Green		{can't re-find}
 03	Bikini		Blue
 04			Gravity Suit/Purple
 05			Black

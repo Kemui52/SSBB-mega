@@ -10,13 +10,15 @@ There are also event match edits, but they might not make sense unless you have 
 
 Inject each file manually or sort them individually to an extracted disc filesystem. The general folders line up, but you'll have to make sure sub-folders and certain names match.
 
-**Fighter** files go in their respective fighter folders. MEGA files have all features, but the MEGA_ part of the name should be removed when adding to your game.
+**Fighter** files go in their respective fighter folders. MEGA files have all features, but the MEGA_ part of the name should be removed when adding to your game. Important to note that PSAs were made for the **PAL version**, so certain characters' audio will be messed up on NTSC.
 
 **Stage** files with numbers go in the "adventure" folder, while the named ones go under "melee". The "melee" stages are widened out for more stomping range.
 
 *System* files exist to remove certain global animations so the fighter files are used, as well as contain some event match edits. Though, the event matches won't make sense unless you find the same models I have. It is recommended to only use **common4** and **common5**.
 
 *Menu2* contains image and text edits for the event matches. Don't worry about it unless you want to try the events.
+
+**Gecko codes** are needed for size changing and better voice pitch modulating. Please use the ones provided in the YouTube video for now.
 
 ### Tools Used?
 

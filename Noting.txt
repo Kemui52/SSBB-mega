@@ -287,7 +287,7 @@ Game And Watch
 Ganondorf
 00	Pig Purple	Original
 01	Pig Red		Red
-02	Pig LessArmour	Green
+02	Pig LessArmour	Green		{glitched even though I thought I got it right}
 03	Ex-Veemon	Blue
 04	Pig White	Grandpa Ganon
 05	Pig Twilight	Brown

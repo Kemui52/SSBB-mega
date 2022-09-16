@@ -1,6 +1,6 @@
 # SSBB Mega-Sized Edits
 
-My personal edits for Brawl to make up for the lack of a proper invulnerability code. Fighters I mod get super armor added to as many animations as possible, stomp sounds, screen shakes, slowed down animations to match size and voice, and ultimately, constant attack bubbles with item vore. 'Cause why not? Subspace Emissary stage collision will also be edited to accomodate giants when needed (and when l get to it).
+My personal edits for Brawl to make up for the lack of a proper invulnerability code. Edited fighters get super armor, stomp sounds, screen shakes, slowed down animations to match size and voice, and ultimately, constant attack bubbles with item vore. 'Cause why not? Subspace Emissary stage collision will also be edited to accomodate giants when needed (and when l get to it).
 
 Fighter progress can be seen in Noting.txt under "Progress", but a lot of the file is personal notes and reminders, as well as lists for what other mods I use but aren't sharing here.
 
@@ -14,11 +14,11 @@ Inject each file manually or sort them individually to an extracted disc filesys
 
 **Stage** files with numbers go in the "adventure" folder, while the named ones go under "melee". The "melee" stages are widened out for more stomping range.
 
+**Gecko codes** are needed for size changing and better voice pitch modulating. Please use the ones provided in the [Gecko Codes](https://github.com/Kemui52/SSBB-mega/blob/main/Gecko%20Codes.txt) file.
+
 *System* files exist to remove certain global animations so the fighter files are used, as well as contain some event match edits. Though, the event matches won't make sense unless you find the same models I have. It is recommended to only use **common4** and **common5**.
 
 *Menu2* contains image and text edits for the event matches. Don't worry about it unless you want to try the events.
-
-**Gecko codes** are needed for size changing and better voice pitch modulating. Please use the ones provided in the YouTube video (by HeadofWhy) for now.
 
 ### Tools Used?
 

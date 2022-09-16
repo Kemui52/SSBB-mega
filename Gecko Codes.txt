@@ -1,0 +1,25 @@
+Codes are PAL region:
+
+Mushroom Pitch, Big
+04AD3C04 3F19999A
+04AD3C3C 3F03D70A
+04AD3C40 3F400000
+04AD3C44 3EF0A3D7
+The voice pitch values for characters who start big.
+Mod: (0.6, 0.515, 0.75, 0.47)
+Default: (0.88, 0.75, 1.12, 0.63)
+
+Size 2+2
+4A000000 9018F140
+140000C4 40000000
+140000C8 3D4AAAAA
+140000D0 3D4AAAAA
+140000D8 40000000
+140000DC 40000000
+E0000000 80008000
+Real size x2 and visual size x2, so walk speed is slower. Also has offense/defense ratios and damage take/receive ratios.
+
+Mushroom Ratios
+04B847FC 3FC00000
+04B84818 40000000
+Ratio scalars for how super and poison 'shrooms affect size.

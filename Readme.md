@@ -10,7 +10,7 @@ There are also event match edits, but they might not make sense unless you have 
 
 Inject each file manually or sort them individually to an extracted disc filesystem. The general folders line up, but you'll have to make sure sub-folders and certain names match. But, I really should just organize it myself...
 
-**Fighter** files go in their respective fighter folders. MEGA files have all features, but the MEGA_ part of the name should be removed when adding to your game. Important to note that PSAs were made for the **PAL version**, so certain characters' audio will be messed up on NTSC.
+**Fighter** files go in their respective fighter folders. It is important to note these PSAs were made for the **PAL version**, so certain characters' audio will be messed up on NTSC.
 
 **Stage** files with numbers go in the "adventure" folder, while the named ones go under "melee". The "melee" stages are widened out for more stomping range.
 
